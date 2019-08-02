@@ -8,6 +8,14 @@ user function MVC004()
 	
 	oBrw:SetDescription("Cadastro Chamados")
 	oBrw:SetAlias("ZZD")
+	
+	oBrw:AddLegend("ZZD_STATUS == '1'", "GREEN",  "Aberto")
+	oBrw:AddLegend("ZZD_STATUS == '2'", "BLUE",   "Em Atendimento")
+	oBrw:AddLegend("ZZD_STATUS == '3'", "YELLOW", "Aguardando")
+	oBrw:AddLegend("ZZD_STATUS == '4'", "BLACK",  "Encerrado")
+	oBrw:AddLegend("ZZD_STATUS == '5'", "RED",    "Em Atraso")
+	
+	
 	oBrw:Activate()
 	
 return
